@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11100f">
+  <meta name="description" content="یک دفتر ادبی شخصی برای خواندن، اندیشیدن و کشف دوباره‌ی کتاب‌ها.">
+  <title>دفتر ادبی | یک کتاب، یک جهان</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content" data-i18n="skip">رفتن به محتوای اصلی</a>
+  <div class="intro-screen" id="introScreen" aria-label="معرفی کتاب">
+    <div class="intro-grain"></div><div class="intro-orb"></div>
+    <p class="eyebrow intro-kicker" data-i18n="introKicker">دفتر خواندنِ شخصی</p>
+    <h1 id="introTitle">نام کتاب</h1>
+    <p class="intro-subtitle" id="introAuthor">نویسنده</p>
+    <button class="button button-light" id="enterButton" data-i18n="enter">ورود به کتاب</button>
+    <button class="text-button skip-intro" id="skipIntro" data-i18n="skipIntro">ورود سریع</button>
+    <span class="intro-index">READ · REFLECT · RETURN</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="صفحه اصلی"><span class="brand-mark">L.</span><span data-i18n="brand">دفتر ادبی</span></a>
+    <div class="header-actions">
+      <button class="icon-button" id="languageToggle" aria-label="Change language">EN</button>
+      <button class="icon-button" id="themeToggle" aria-label="تغییر پوسته" title="تغییر پوسته">◐</button>
+      <button class="icon-button menu-toggle" id="menuToggle" aria-label="باز کردن فهرست" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <nav class="contents-drawer" id="contentsDrawer" aria-label="فهرست بخش‌ها">
+    <div class="drawer-top"><span class="eyebrow" data-i18n="contents">فهرست</span><button class="text-button" id="closeMenu" data-i18n="close">بستن ×</button></div>
+    <a href="#introduction" data-i18n="navIntro">معرفی کتاب</a>
+    <a href="#summary" data-i18n="navSummary">خلاصه بدون اسپویل</a>
+    <a href="#perspective" data-i18n="navPerspective">نگاه من</a>
+    <a href="#analysis" data-i18n="navAnalysis">نقد و تحلیل</a>
+    <a href="#notes" data-i18n="navNotes">ایده‌ها و یادداشت‌ها</a>
+    <a href="#quotes" data-i18n="navQuotes">گزیده‌جمله‌ها</a>
+    <a href="#characters" data-i18n="navCharacters">شخصیت‌ها</a>
+    <a href="#context" data-i18n="navContext">زمینه تاریخی و فرهنگی</a>
+    <a href="#research" data-i18n="navResearch">پژوهش‌های بعدی</a>
+    <a href="#discussion" data-i18n="navDiscussion">گفت‌وگوی خوانندگان</a>
+    <a href="#sources" data-i18n="navSources">منابع</a>
+  </nav>
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+  <main id="main-content">
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="heroEyebrow">یک کتاب · یک جهانِ شخصی</p>
+        <p class="hero-overline" id="heroOriginalTitle">A BOOK TITLE</p>
+        <h1 id="bookTitle">نام کتاب</h1>
+        <p class="hero-author" id="bookByline">اثر نویسنده · ترجمه مترجم</p>
+        <p class="hero-description" id="bookIntro">این متن نمونه است؛ معرفی خودت را در فایل محتوای فارسی جایگزین کن.</p>
+        <div class="rating-line"><span class="rating-stars" id="ratingStars" aria-label="امتیاز شخصی">★★★★☆</span><span id="ratingText">۴ از ۵ · امتیاز شخصی من</span></div>
+        <div class="hero-actions"><a class="button" href="#introduction" data-i18n="beginReading">شروع خواندن <span aria-hidden="true">↗</span></a><button class="text-button" id="shareSite" data-i18n="shareSite">اشتراک‌گذاری این صفحه</button></div>
+      </div>
+      <div class="hero-art" id="heroArt" role="img" aria-label="تصویر هنری کتاب">
+        <div class="art-arc arc-one"></div><div class="art-arc arc-two"></div><div class="art-sun"></div>
+        <div class="art-caption"><span id="artEdition">FIELD NOTES / 001</span><span id="artYear">A READING JOURNAL</span></div>
+        <div class="art-title" id="artTitle">THE<br>INNER<br>WORLD</div>
+      </div>
+      <div class="hero-foot"><span data-i18n="heroFoot">یادداشت‌ها، برداشت‌ها و پرسش‌های در حال شکل‌گیری</span><span>01 — 11</span></div>
+    </section>
+
+    <section class="section-wrap intro-grid content-section" id="introduction">
+      <div class="section-index">01 / <span data-i18n="navIntro">معرفی کتاب</span></div>
+      <div class="section-body"><p class="eyebrow" data-i18n="sectionEyebrow">پیش از ورق زدن</p><h2 data-i18n="headingIntro">ورود به جهان کتاب</h2><div class="prose" id="introductionContent"></div></div>
+    </section>
+
+    <section class="section-wrap content-section" id="summary">
+      <div class="section-index">02 / <span data-i18n="navSummary">خلاصه بدون اسپویل</span></div>
+      <div class="section-body wide-body"><p class="eyebrow" data-i18n="readWithoutSpoilers">بدون لو دادن پایان</p><h2 data-i18n="headingSummary">نقشه‌ای کوتاه از مسیر</h2><div class="prose" id="summaryContent"></div></div>
+    </section>
+
+    <section class="perspective-band content-section" id="perspective">
+      <div class="section-wrap perspective-inner">
+        <div class="section-index">03 / <span data-i18n="navPerspective">نگاه من</span></div>
+        <div class="section-body"><p class="eyebrow" data-i18n="personalNotebook">از دفتر شخصی من</p><h2 data-i18n="headingPerspective">آنچه برای من باقی ماند</h2><div class="prose" id="perspectiveContent"></div><p class="owner-note" data-i18n="ownerNote">این بخش برای برداشت‌های خودت است؛ متن نمونه را با نوشته‌ی تأییدشده‌ی خودت عوض کن.</p></div>
+      </div>
+    </section>
+
+    <section class="section-wrap content-section" id="analysis">
+      <div class="section-index">04 / <span data-i18n="navAnalysis">نقد و تحلیل</span></div>
+      <div class="section-body wide-body"><p class="eyebrow" data-i18n="closerReading">خوانش دقیق‌تر</p><h2 data-i18n="headingAnalysis">ساختار، ایده و اثرگذاری</h2><div class="prose" id="analysisContent"></div><div id="analysisSpoiler"></div></div>
+    </section>
+
+    <section class="section-wrap content-section" id="notes">
+      <div class="section-index">05 / <span data-i18n="navNotes">ایده‌ها و یادداشت‌ها</span></div>
+      <div class="section-body wide-body"><p class="eyebrow" data-i18n="marginNotes">حاشیه‌های دفتر</p><h2 data-i18n="headingNotes">ایده‌هایی برای بازگشت</h2><div class="notes-grid" id="notesContent"></div></div>
+    </section>
+
+    <section class="quotes-section content-section" id="quotes">
+      <div class="section-wrap">
+        <div class="section-index">06 / <span data-i18n="navQuotes">گزیده‌جمله‌ها</span></div>
+        <div class="section-body"><p class="eyebrow" data-i18n="collectedFragments">تکه‌هایی که می‌مانند</p><h2 data-i18n="headingQuotes">جمله‌ها در حاشیه ذهن</h2><p class="section-lead" data-i18n="quoteIntro">نقل‌قول‌ها را دقیقاً از نسخه‌ای که می‌خوانی وارد کن و در صورت نیاز شماره صفحه را بنویس.</p><div class="quotes-grid" id="quotesContent"></div></div>
+      </div>
+    </section>
+
+    <section class="section-wrap content-section" id="characters">
+      <div class="section-index">07 / <span data-i18n="navCharacters">شخصیت‌ها</span></div>
+      <div class="section-body wide-body"><p class="eyebrow" data-i18n="castNotes">چهره‌ها و نسبت‌ها</p><h2 data-i18n="headingCharacters">چه کسانی این جهان را می‌سازند؟</h2><div id="charactersContent"></div></div>
+    </section>
+
+    <section class="section-wrap content-section" id="context">
+      <div class="section-index">08 / <span data-i18n="navContext">زمینه تاریخی و فرهنگی</span></div>
+      <div class="section-body wide-body"><p class="eyebrow" data-i18n="beyondThePage">فراتر از صفحه</p><h2 data-i18n="headingContext">کتاب در زمانه خودش</h2><div class="prose" id="contextContent"></div></div>
+    </section>
+
+    <section class="section-wrap content-section" id="research">
+      <div class="section-index">09 / <span data-i18n="navResearch">پژوهش‌های بعدی</span></div>
+      <div class="section-body wide-body"><p class="eyebrow" data-i18n="openQuestions">پرسش‌های باز</p><h2 data-i18n="headingResearch">چیزهایی که هنوز نمی‌دانم</h2><div id="researchContent"></div><p class="owner-note" data-i18n="researchEditNote">برای افزودن، ویرایش یا حذف موارد، فایل محتوای کتاب را تغییر بده.</p></div>
+    </section>
+
+    <section class="discussion-band content-section" id="discussion">
+      <div class="section-wrap discussion-inner">
+        <div class="section-index">10 / <span data-i18n="navDiscussion">گفت‌وگوی خوانندگان</span></div>
+        <div class="section-body"><p class="eyebrow" data-i18n="readingTogether">خواندن در کنار هم</p><h2 data-i18n="headingDiscussion">گفت‌وگو با دیگر خوانندگان</h2><p class="section-lead" data-i18n="backendNotice">بخش نظرات با Supabase کار می‌کند و تا زمان واردکردن تنظیمات و اجرای سیاست‌های امنیتی، فعال نیست.</p><div id="authPanel" class="auth-panel"></div><div id="commentsPanel" class="comments-panel"></div></div>
+      </div>
+    </section>
+
+    <section class="section-wrap content-section sources-section" id="sources">
+      <div class="section-index">11 / <span data-i18n="navSources">منابع</span></div>
+      <div class="section-body wide-body"><p class="eyebrow" data-i18n="readingTrail">ردّ منابع</p><h2 data-i18n="headingSources">منابع و ارجاعات</h2><div id="sourcesContent"></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="section-wrap footer-inner"><a class="brand" href="#home"><span class="brand-mark">L.</span><span data-i18n="brand">دفتر ادبی</span></a><p data-i18n="footerLine">ساخته‌شده برای خواندن آهسته و فکر کردن دوباره.</p><a href="#home" class="back-top" data-i18n="backTop">بازگشت به بالا ↑</a></div><p class="footer-credit">A PERSONAL READING JOURNAL · <span id="footerBookId">BOOK-001</span></p></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="js/content.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/comments.js"></script>
+</body>
+</html>

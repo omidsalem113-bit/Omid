@@ -1,0 +1,7 @@
+/* فونت‌های محلی دلخواه را می‌توانی در assets/fonts قرار بدهی و اینجا تعریف کنی.
+   فعلاً از فونت‌های سیستمی استفاده می‌شود تا سایت بدون فایل اضافی اجرا شود. */
+:lang(fa) body{font-family:Tahoma,"Segoe UI",sans-serif}
+[dir="rtl"] .hero h1{letter-spacing:0;line-height:1.12}
+[dir="ltr"] body{font-family:Georgia,"Times New Roman",serif}
+[dir="ltr"] .hero h1,[dir="ltr"] .section-body h2{letter-spacing:-.045em}
+[dir="ltr"] .prose{font-family:Georgia,"Times New Roman",serif;line-height:1.9}

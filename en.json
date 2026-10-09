@@ -1,0 +1,88 @@
+{
+  "book": {
+    "title": "Write the Book Title Here",
+    "originalTitle": "ORIGINAL TITLE",
+    "author": "Author Name",
+    "translator": "Translator Name",
+    "shortIntroduction": "This is placeholder text. Replace it with your own introduction: why you chose this book and what draws you into its world.",
+    "rating": 4,
+    "editionLabel": "FIELD NOTES / 001",
+    "artCaption": "A PERSONAL READING JOURNAL",
+    "artTitle": "A BOOK\nA WORLD",
+    "themeAccent": "#a44d35"
+  },
+  "labels": {
+    "translatedBy": "trans.",
+    "personalRating": "my personal rating"
+  },
+  "introduction": [
+    "This is placeholder text and contains no factual claims about a real book.",
+    "Use this section to introduce the author, the context in which the work emerged, and why you chose to read it. Write or approve the final text yourself."
+  ],
+  "summary": [
+    "Write a spoiler-free summary here. Avoid revealing the ending, major twists, or details that could undermine the reading experience."
+  ],
+  "perspective": [
+    "Placeholder: write your own personal response here. The template never invents an opinion on your behalf."
+  ],
+  "analysis": [
+    "Placeholder: discuss structure, ideas, strengths, weaknesses, and narrative or argumentative technique using specific examples."
+  ],
+  "analysisSpoiler": {
+    "enabled": true,
+    "content": [
+      "Spoiler placeholder: add your own discussion of the ending or a major reveal after reading the book. This is not a factual description of any book."
+    ]
+  },
+  "notes": [
+    {
+      "title": "Sample note",
+      "text": "Placeholder card. Replace it with an actual observation or idea from your reading."
+    },
+    {
+      "title": "A question to revisit",
+      "text": "What deserves a closer look after finishing the book?"
+    }
+  ],
+  "quotes": [
+    {
+      "text": "Insert an exact quotation from your own edition here.",
+      "page": "—",
+      "commentary": "This is a placeholder, not a real quotation."
+    }
+  ],
+  "characters": [
+    {
+      "name": "Character name",
+      "role": "Role in the story",
+      "relationships": "Connections to other characters",
+      "notes": "Add your own notes.",
+      "spoiler": false
+    }
+  ],
+  "context": [
+    "Add relevant historical, cultural, or intellectual context with credible sources. If it does not apply, disable this section in visibility."
+  ],
+  "research": [
+    {
+      "question": "How can this question be investigated using reliable sources?",
+      "explanation": "Briefly explain why the question matters.",
+      "status": "needs-investigation",
+      "note": "Add research notes later.",
+      "sources": []
+    }
+  ],
+  "sources": [
+    {
+      "author": "Author / researcher",
+      "title": "Source title",
+      "publisher": "Publisher or journal",
+      "year": "Year",
+      "url": ""
+    }
+  ],
+  "visibility": {
+    "characters": true,
+    "context": true
+  }
+}
